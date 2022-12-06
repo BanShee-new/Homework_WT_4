@@ -1,0 +1,22 @@
+
+-- create
+CREATE TABLE GROUPMATES (
+  Id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO GROUPMATES VALUES (001, 'Иван', '25', 'Москва');
+INSERT INTO GROUPMATES VALUES (002, 'Сергей', '30', 'Тверь');
+INSERT INTO GROUPMATES VALUES (003, 'Анна', '28', 'Тула');
+INSERT INTO GROUPMATES VALUES (004, 'Ирина', '29', 'Сочи');
+INSERT INTO GROUPMATES VALUES (005, 'Александр', '33', 'Иркутск');
+INSERT INTO GROUPMATES VALUES (006, 'Владимир', '19', 'Самара');
+INSERT INTO GROUPMATES VALUES (007, 'Екатерина', '26', 'Москва');
+INSERT INTO GROUPMATES VALUES (008, 'Ольга', '35', 'Сочи');
+INSERT INTO GROUPMATES VALUES (009, 'Алина', '18', 'Сызрань');
+
+-- fetch 
+SELECT name FROM GROUPMATES WHERE age BETWEEN 18 AND 29;
